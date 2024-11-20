@@ -36,10 +36,7 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -62,4 +59,13 @@ class DefaultFirebaseOptions {
     measurementId: 'G-1F0T9GEX5C',
   );
 
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyD5NneGGl1Bjni3cS07aUavApLrrdk08eU',
+    appId: '1:134281827033:web:960ba1c5e1cea12a92e4c8',
+    messagingSenderId: '134281827033',
+    projectId: 'flutter-codelabs-f0a90',
+    authDomain: 'flutter-codelabs-f0a90.firebaseapp.com',
+    storageBucket: 'flutter-codelabs-f0a90.firebasestorage.app',
+    measurementId: 'G-4MMPHQTH99',
+  );
 }
